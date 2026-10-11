@@ -6,16 +6,16 @@ An emulator for Game Boy Advance written in C++17, focused on accuracy, modular 
 
 ## Key Features
 
-* **CPU Core**: Complete ARM7TDMI processor implementation supporting both 32-bit ARM and 16-bit THUMB instruction sets[cite: 2].
-* **Graphics (PPU)**: Full support for GBA display modes (Modes 0–5), including Tilemap backgrounds, Affine (Mode 7 style) background transformations, Sprites (OBJ) with transformation matrices, Windows, and Alpha Blending effects[cite: 2].
-* **Audio (APU)**: DirectSound FIFO channels (A/B) combined with legacy Game Boy sound channels (Square 1 & 2, Wave, Noise)[cite: 2].
-* **System Interconnect**: Accurate memory mapping, 4-channel DMA engine, 4-channel hardware timer system with cascading support, and interrupt management (IE/IF/IME)[cite: 2].
-* **Automated Save Detection**: Built-in cartridge analyzer to auto-detect and emulate SRAM, EEPROM, and FLASH (64K / 128K) backup types without manual setup[cite: 2].
-* **HLE & Embedded BIOS**: Supports official GBA BIOS images (`bios.bin`) as well as an integrated High-Level Emulation (HLE) fallback mechanism for instant boot[cite: 2].
+* **CPU Core**: Complete ARM7TDMI processor implementation supporting both 32-bit ARM and 16-bit THUMB instruction sets
+* **Graphics (PPU)**: Full support for GBA display modes (Modes 0–5), including Tilemap backgrounds, Affine (Mode 7 style) background transformations, Sprites (OBJ) with transformation matrices, Windows, and Alpha Blending effects
+* **Audio (APU)**: DirectSound FIFO channels (A/B) combined with legacy Game Boy sound channels (Square 1 & 2, Wave, Noise)
+* **System Interconnect**: Accurate memory mapping, 4-channel DMA engine, 4-channel hardware timer system with cascading support, and interrupt management (IE/IF/IME)
+* **Automated Save Detection**: Built-in cartridge analyzer to auto-detect and emulate SRAM, EEPROM, and FLASH (64K / 128K) backup types without manual setup
+* **HLE & Embedded BIOS**: Supports official GBA BIOS images (`bios.bin`) as well as an integrated High-Level Emulation (HLE) fallback mechanism for instant boot
 * **Dual Frontends**: 
-  * **SDL2**: Minimalist, low-latency rendering and audio output interface[cite: 2].
-  * **Qt GUI**: Feature-rich user interface for ROM management and debugging[cite: 2].
-* **State I/O & Debugging**: Save State serialization/deserialization support and execution trace logging engines[cite: 2].
+  * **SDL2**: Minimalist, low-latency rendering and audio output interface
+  * **Qt GUI**: Feature-rich user interface for ROM management and debugging
+* **State I/O & Debugging**: Save State serialization/deserialization support and execution trace logging engines
 
 ---
 
@@ -42,7 +42,6 @@ BoyAdvance/
 │   └── main_qt.cpp                 # Qt GUI frontend application
 ├── build_qt_gui.ps1                 # Qt build automation script
 └── package_release.ps1             # Release packaging utility
-```[cite: 2]
 
 ---
 
@@ -52,10 +51,9 @@ BoyAdvance/
 * **Compiler**: GCC 10+, Clang 11+, or MSVC 2019+ (C++17 standard required)
 * **Build System**: CMake 3.16+
 * **Dependencies**: 
-  * `SDL2` (Required for SDL frontend)
-  * `Qt 5` or `Qt 6` (Optional for Qt GUI frontend)
+  * SDL2 (Required for SDL frontend)
+  * Qt 5 or Qt 6 (Optional for Qt GUI frontend)
 
 ### 1. Clone the Repository
-```bash
-git clone [https://github.com/your-username/BoyAdvance.git](https://github.com/your-username/BoyAdvance.git)
+git clone [https://github.com/sapph1rer/BoyAdvance.git]
 cd BoyAdvance
